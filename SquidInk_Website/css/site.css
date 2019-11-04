@@ -1,0 +1,267 @@
+/*This is the code for the website that has been used*/
+
+
+/*This is the body tag where we have styled the font type and the margin  auto for centering*/
+
+body {
+    margin: 0 auto;
+    font-family: 'alegreya', serif;
+}
+
+
+/* Turning on border-box */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*Skip to content button*/
+
+.accessibility {
+    position: absolute;
+    left: -10px;
+    top: -19px;
+    background: rgba(253, 124, 61, 0.9);
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border: solid 3px;
+    border-radius: 0 0 25px 0;
+    border-top: 0;
+}
+
+.accessibility a {
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Rosario', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #000;
+}
+
+.accessibility:hover {
+    background-color: #429FD5;
+}
+
+.accessibility a:hover {
+    color: #FFF;
+}
+
+
+/* styling everything in the header */
+
+.site-header {
+    height: 400px;
+    background-image: url("../img/splatpattern.png");
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImg {
+    width: 100%;
+}
+
+
+/* Main content section */
+
+.intro {
+    font-family: 'Rosario', sans-serif;
+    max-width: 550px;
+    text-align: center;
+}
+
+
+/* styling for background in about us section */
+
+.background {
+    background: rgba(253, 124, 61, 0.9);
+}
+
+
+/* Responsive containers styling */
+
+.main_container {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.text-content {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.site-footer__container {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+/* styling profiles of us section */
+
+
+/* creating responsive bio sections for mobile */
+
+.bio__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bio {
+    background-color: #e8e8e8;
+}
+
+.bio__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.bio__person {
+    padding: 10px;
+}
+
+.bio__person p,
+h3 {
+    text-align: center;
+}
+
+
+/* Image styling in our profiles section */
+
+.bio__person img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+
+/* control the space around the bio heading and paragraphs */
+
+.bio__person h3 {
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.bio__person p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* padding around our paragraphs in bio sections */
+
+.bio__person p.description {
+    padding: 10px 10px 30px 10px;
+}
+
+
+/* using min-width media query to override our mobile layout to ensure our bios go onto more than one line */
+
+@media screen and (min-width: 600px) {
+    .bio__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bio__person {
+        text-align: left;
+        flex: 33.333%;
+    }
+}
+
+
+/*This is using media query to set a max width to style the bio person so that the images are aligned*/
+
+@media screen and (max-width: 2560px) {
+    .bio__person {
+        text-align: left;
+        flex: 45%;
+    }
+}
+
+
+/* styling links in the about our work process section */
+
+.text-content ul {
+    list-style-type: none;
+}
+
+.text-content ul li {
+    padding: 5px;
+    text-decoration: underline;
+}
+
+.text-content li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: rgba(253, 124, 61, 0.9);
+}
+
+
+/* footer */
+
+.site-footer {
+    background-color: rgba(253, 124, 61, 0.9);
+}
+
+.site-footer a {
+    text-decoration: underline;
+    color: black;
+}
+
+.site-footer a:hover {
+    color: white;
+}
+
+
+/* call to action button */
+
+a.call-to-action {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 0.2em;
+    background-color: rgba(253, 124, 61, 0.9);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.call-to-action:hover {
+    color: white;
+    background-color: #429fd5;
+    border-color: #429fd5;
+}
+
+
+/*Portfolio page submission h3 tag*/
+
+.containerTitle {
+    text-align: center;
+}
+
+.background__portfolio {
+    background-color: #e8e8e8;
+}
+
+.text-content h3 {
+    font-family: 'Rosario', sans-serif;
+    color: rgba(253, 124, 61, 0.85);
+}
+
+.background__portfolio li {
+    list-style-type: circle;
+}
